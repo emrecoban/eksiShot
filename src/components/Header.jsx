@@ -26,10 +26,10 @@ export default function Header(){
                 placeholder="Enter entry link..." 
                 className="h-12 border-2 p-4 rounded-md border-green-500 focus:outline-none focus:border-sky-500 w-full max-w-lg" />
             </form>
-            <button
+{/*             <button
             className="flex-none hover:bg-lime-100 py-3 px-6 rounded-md text-black duration-300">
                 Hakkında
-            </button>
+            </button> */}
         </nav>
     </div>
     )
