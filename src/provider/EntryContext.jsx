@@ -18,7 +18,6 @@ export default function EntryContextProvider({children}){
             const title = $("#title").attr("data-title");
             const author = element.attr("data-author");
             const date = element.find(".entry-date").text();
-            console.log(`Entry içeriği [${id}]: `, body)
             setEntry({
                 id: id,
                 title,
