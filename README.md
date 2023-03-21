@@ -11,7 +11,7 @@ Arama çubuğuna entry adresini girin ve `Enter` tuşuna basarak aratın. Ardın
 > eksisozluk.com adresine getirilen erişim engelinden dolayı Türkiye lokasyonlu bağlantılarda VPN kullanmalısınız.
 
 > **Allow CORS Eklentisini Yükleyin**
-> Tarayıcılarda varsayılan olarak farklı kaynaklardan veri almak engellenir. Bu eklenti etkinleştirmek, bu engeli kaldırmanıza olanak tanır. [Allow CORS Chrome Eklentisi](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en)
+> Tarayıcılarda varsayılan olarak farklı kaynaklardan veri almak engellenir. Bu eklentiyi etkinleştirerek, engellemeyi ortadan kaldırabilirsiniz. [Allow CORS Chrome Eklentisi](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en)
 
 ## Özellikler
 - Entry bilgilerini getirir ve resime çevirir.
