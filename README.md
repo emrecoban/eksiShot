@@ -1,6 +1,9 @@
 <h1 align="center"><img src="public/img/eksiShot_logo.png" height="80" align="center" /><br />eksiShot</h1>
 
-eksiShot, ekşi sözlük'teki entryleri resimlere dönüştürmek ve entry ekran görüntüleri almak için ücretsiz bir araçtır.
+eksiShot, [ekşi sözlük](https://www.eksisozluk.com)'teki entryleri resimlere dönüştürmek ve entry ekran görüntüleri almak için ücretsiz bir araçtır.
+
+### 🇬🇧 English
+A free tool that converts entries on [ekşi sözlük](https://www.eksisozluk.com) into images and takes screenshots of entry pages.
 
 ## Önizleme
 eksiShot, [eksishot.vercel.app](https://eksishot.vercel.app) adresi üzerinden kullanılabilir.
