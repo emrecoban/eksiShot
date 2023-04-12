@@ -14,7 +14,7 @@ export default function EntryContextProvider({ children }) {
       const response = await axios.get(
         `https://eksisozlukapi.vercel.app/getEntry?url=${encodeURIComponent(link)}`
       );
-      const $ = cheerio.load(response.data.contents, { decodeEntities: false });
+      const $ = cheerio.load(response.data, { decodeEntities: false });
       const element = $(`li[data-id=${id}]`);
       const body = element.find(".content").html().trim();
       const title = $("#title").attr("data-title");
