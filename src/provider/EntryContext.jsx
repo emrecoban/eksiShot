@@ -38,6 +38,16 @@ export default function EntryContextProvider({ children }) {
     }
   }
 
+  React.useState(()=>{
+    (async()=>{
+      fetch('https://eksisozluk2023.com/entry/151198543', { mode: 'no-cors' })
+      .then(response => response.text())
+      .then(html => console.log(html))
+      .catch(error => console.log(error));
+
+    })()
+  }, [])
+
   return (
     <EntryContext.Provider
       value={{
