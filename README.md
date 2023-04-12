@@ -3,7 +3,7 @@
 eksiShot, [ekşi sözlük](https://www.eksisozluk.com)'teki entryleri resimlere dönüştürmek ve entry ekran görüntüleri almak için ücretsiz bir araçtır.
 
 ### API Server
-Bu araç [github.com/emrecoban/eksisozluk-api](https://github.com/emrecoban/eksisozluk-api) adresinde yer alan API servisini kullanarak çalışmaktadır.
+Bu araç [emrecoban/eksisozluk-api](https://github.com/emrecoban/eksisozluk-api) adresinde yer alan API servisini kullanarak çalışmaktadır.
 
 ### 🇬🇧 English
 A free tool that converts entries on [ekşi sözlük](https://www.eksisozluk.com) into images and takes screenshots of entry pages.
