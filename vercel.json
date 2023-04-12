@@ -1,0 +1,11 @@
+{
+    "version": 2,
+    "name": "eksisozluk api",
+    "builds": [
+       { "src": "/app.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+      { "src": "/server/(.*)", "dest": "/app.js" },
+      { "src": "/(.*)", "dest": "index.html" }
+    ]
+ }
