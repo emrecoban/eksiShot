@@ -2,6 +2,9 @@
 
 eksiShot, [ekşi sözlük](https://www.eksisozluk.com)'teki entryleri resimlere dönüştürmek ve entry ekran görüntüleri almak için ücretsiz bir araçtır.
 
+### API Server
+Bu araç [github.com/emrecoban/eksisozluk-api](https://github.com/emrecoban/eksisozluk-api) adresinde yer alan API servisini kullanarak çalışmaktadır.
+
 ### 🇬🇧 English
 A free tool that converts entries on [ekşi sözlük](https://www.eksisozluk.com) into images and takes screenshots of entry pages.
 
@@ -10,11 +13,8 @@ eksiShot, [eksishot.vercel.app](https://eksishot.vercel.app) adresi üzerinden k
 
 Arama çubuğuna entry adresini girin ve `Enter` tuşuna basarak aratın. Ardından entry görüntüsünü indirmek için `Görüntüyü İndir` butonuna tıklayın.
 
-> **VPN Kullanın**
-> eksisozluk.com adresine getirilen erişim engelinden dolayı Türkiye lokasyonlu bağlantılarda VPN kullanmalısınız.
-
-> **VPN'siz Erişin**
-> Ekşi Sözlük'e VPN kullanmadan erişmek için [eksisozluk2023.com](https://eksisozluk2023.com) adresini kullanabilirsiniz.
+> **VPN'siz Erişim**
+> Entry görüntüsü oluşturmak için VPN kullanmanıza gerek yok. hem [eksisozluk2023.com](https://eksisozluk2023.com) adresini hem de [eksisozluk.com](https://eksisozluk.com) adresini kullanabilirsiniz.
 
 ## Özellikler
 - Entry bilgilerini getirir ve resime çevirir.
