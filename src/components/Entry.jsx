@@ -44,9 +44,9 @@ export default function Entry() {
                 dangerouslySetInnerHTML={{ __html: entry.body }}
               ></p>
               <div id="entry-footer" className="flex flex-row justify-stretch">
-                <span className="text-lime-600 text-xs sm:text-sm">eksishot.vercel.app</span>
-                <p id="entry-author" className="flex flex-row space-x-2 w-full justify-end">
-                  <span className="text-sm">{entry.author}</span>
+                <p className="text-lime-600 text-xs sm:text-sm">eksishot.vercel.app</p>
+                <p id="entry-author" className="flex flex-row w-full justify-end gap-x-2">
+                  <span className="text-sm w-full text-right">{entry.author}</span>
                   <img className="h-5" src="img/damla.png" />
                 </p>
               </div>
@@ -56,7 +56,7 @@ export default function Entry() {
         <button
           onClick={() =>
             domtoimage
-              .toBlob(entryNode.current, { copyDefaultStyles: false })
+              .toBlob(entryNode.current, { copyDefaultStyles: false, quality: 0.99 })
               .then(function (blob) {
                 window.saveAs(blob, "eksiShot.png");
               })
