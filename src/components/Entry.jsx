@@ -43,8 +43,8 @@ export default function Entry() {
                 className="text-sm"
                 dangerouslySetInnerHTML={{ __html: entry.body }}
               ></p>
-              <div id="entry-footer" className="flex flex-row justify-between">
-                <span className="text-lime-600">eksishot.vercel.app</span>
+              <div id="entry-footer" className="flex flex-row justify-stretch">
+                <span className="text-lime-600 text-xs sm:text-sm">eksishot.vercel.app</span>
                 <p id="entry-author" className="flex flex-row space-x-2 w-full justify-end">
                   <span className="text-sm">{entry.author}</span>
                   <img className="h-5" src="img/damla.png" />
