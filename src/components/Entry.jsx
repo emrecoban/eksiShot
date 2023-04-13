@@ -45,7 +45,7 @@ export default function Entry() {
               ></p>
               <div id="entry-footer" className="flex flex-row justify-between">
                 <span className="text-lime-600">eksishot.vercel.app</span>
-                <p id="entry-author" className="flex flex-row space-x-2">
+                <p id="entry-author" className="flex flex-row space-x-2 w-full justify-end">
                   <span className="text-sm">{entry.author}</span>
                   <img className="h-5" src="img/damla.png" />
                 </p>
