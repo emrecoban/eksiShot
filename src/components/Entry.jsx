@@ -50,7 +50,7 @@ export default function Entry() {
                     <p className="text-xs sm:text-sm w-full text-right">{entry.author}</p>
                     <p className="text-xs italic text-gray-500 w-full text-right">{entry.date}</p>
                   </div>
-                  <img className="h-8 sm:h-10 rounded-full" src={entry.avatar} />
+                  <img className="h-5 self-center" src="/img/damla.png" />
                 </div>
               </div>
             </div>
