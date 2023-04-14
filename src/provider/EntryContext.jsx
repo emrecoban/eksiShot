@@ -20,12 +20,14 @@ export default function EntryContextProvider({ children }) {
       const title = $("#title").attr("data-title");
       const author = element.attr("data-author");
       const date = element.find(".entry-date").text();
+      const avatar = $(".avatar").attr("src");
       setEntry({
         id: id,
         title,
         body,
         author,
         date,
+        avatar,
       });
     } catch (error) {
       if (error.message === "timeout exceeded") {
@@ -53,24 +55,3 @@ export default function EntryContextProvider({ children }) {
 }
 
 export const useEntryContext = () => React.useContext(EntryContext);
-
-/* element.find(".content").find("br").replaceWith("\n");
-
-let entry_id = element.attr("data-id");
-let title = $("#title").attr("data-title");
-let body = element.find(".content").html().trim();
-let author = element.attr("data-author");
-let fav_count = element.attr("data-favorite-count");
-let date = element.find(".entry-date").text();
-let [created_at, updated_at] = parseDate(date); 
-
-let entry = {
-  id: +entry_id,
-  title,
-  body,
-  author,
-  fav_count: +fav_count,
-  created_at,
-  updated_at,
-};
-return entry; */

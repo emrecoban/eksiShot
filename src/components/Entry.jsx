@@ -35,20 +35,23 @@ export default function Entry() {
                 src="img/eksisozluk_logo.svg"
                 alt="ekşi sözlük logo"
               />
-              <h1 id="entry-title" className="font-bold text-sm">
+              <h1 id="entry-title" className="font-bold text-xs sm:text-sm">
                 {entry.title}
               </h1>
               <p
                 id="entry-body"
-                className="text-sm"
+                className="text-xs sm:text-sm"
                 dangerouslySetInnerHTML={{ __html: entry.body }}
               ></p>
               <div id="entry-footer" className="flex flex-row justify-stretch">
-                <p className="text-lime-600 text-xs sm:text-sm">eksishot.vercel.app</p>
-                <p id="entry-author" className="flex flex-row w-full justify-end gap-x-2">
-                  <span className="text-sm w-full text-right">{entry.author}</span>
-                  <img className="h-5" src="img/damla.png" />
-                </p>
+                <p className="text-lime-600 text-xs sm:text-sm self-center">eksishot.vercel.app</p>
+                <div id="entry-author" className="flex flex-row w-full justify-end gap-x-2 content-center">
+                  <div className="flex flex-col w-full">
+                    <p className="text-xs sm:text-sm w-full text-right">{entry.author}</p>
+                    <p className="text-xs italic text-gray-500 w-full text-right">{entry.date}</p>
+                  </div>
+                  <img className="h-8 sm:h-10 rounded-full" src={entry.avatar} />
+                </div>
               </div>
             </div>
           </div>
