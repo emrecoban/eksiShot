@@ -21,13 +21,14 @@ export default function EntryContextProvider({ children }) {
       const author = element.attr("data-author");
       const date = element.find(".entry-date").text();
       const avatar = $(".avatar").attr("src");
+      const base64 = await axios.get(`https://api.allorigins.win/get?url=${avatar}`)
       setEntry({
         id: id,
         title,
         body,
         author,
         date,
-        avatar,
+        avatar: base64.data.contents,
       });
     } catch (error) {
       if (error.message === "timeout exceeded") {
