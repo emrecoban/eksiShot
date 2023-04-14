@@ -21,14 +21,14 @@ export default function EntryContextProvider({ children }) {
       const author = element.attr("data-author");
       const date = element.find(".entry-date").text();
       const avatar = $(".avatar").attr("src");
-      const base64 = await axios.get(`https://api.allorigins.win/get?url=${avatar}`)
+      const base64 = await axios.get(`https://eksisozlukapi.vercel.app/getEntry?url=${avatar}`)
       setEntry({
         id: id,
         title,
         body,
         author,
         date,
-        avatar: base64.data.contents,
+        avatar: base64.data,
       });
     } catch (error) {
       if (error.message === "timeout exceeded") {

@@ -13,7 +13,7 @@ export default function Header() {
 
   return (
     <div className="w-full bg-slate-50 p-4 shadow flex justify-center">
-      <nav className="max-w-7xl w-full flex items-center space-x-4 justify-between">
+      <nav className="max-w-7xl w-full flex items-center space-x-4">
         <a href="#" className="nav-start flex items-center flex-none">
           <img
             className="h-12"
@@ -24,13 +24,14 @@ export default function Header() {
             eksiShot
           </span>
         </a>
-        <form onSubmit={handleSubmit} className="grow flex justify-center">
+        <form onSubmit={handleSubmit} className="grow flex justify-stretch">
           <input
             value={entryURL}
             onChange={(e) => setEntryURL(e.target.value)}
             type="text"
             placeholder="Enter entry link..."
-            className="h-12 border-2 p-4 rounded-md border-green-500 focus:outline-none focus:border-sky-500 w-full max-w-lg"
+            maxLength="50"
+            className="h-12 border-2 p-4 rounded-md border-green-500 focus:outline-none focus:border-sky-500 w-full text-center"
           />
         </form>
         {/*             <button

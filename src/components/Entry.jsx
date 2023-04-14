@@ -7,6 +7,13 @@ import { copyBlobToClipboard } from 'copy-image-clipboard'
 export default function Entry() {
   const { entry, loader } = useEntryContext();
   const entryNode = React.useRef();
+  const [status, setStatus] = React.useState(false)
+
+  React.useEffect(()=>{
+    setTimeout(()=>{
+      setStatus(false)
+    }, 2000)
+  },[status])
 
   if (loader) {
     return (
@@ -71,16 +78,18 @@ export default function Entry() {
         >Görüntüyü İndir
         </button>
         <button
-          onClick={() =>
-            domtoimage
+          disabled={status}
+          onClick={() =>{
+              setStatus(true);
+              domtoimage
               .toBlob(entryNode.current, { copyDefaultStyles: false, quality: 0.99 })
               .then(function (blob) {
-                return copyBlobToClipboard(blob)
+                return copyBlobToClipboard(blob);
               })
-          }
-          className="border border-indigo-500 py-2 basis-1/3 bg-lime-500 rounded-md text-black duration-300 hover:bg-lime-400 font-[Inter]"
+          }}
+          className="disabled:bg-gray-500 border disabled:text-slate-200 border-indigo-500 py-2 basis-1/3 bg-[#7DCE13] rounded-md text-black duration-300 enabled:hover:bg-[#5BB318] font-[Inter]"
         >
-          Kopyala
+          {status ? "🎉 Kopyalandı" : "Kopyala"}
         </button>
         </div>
         
