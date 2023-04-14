@@ -18,6 +18,8 @@ Arama çubuğuna entry adresini girin ve `Enter` tuşuna basarak aratın. Ardın
 
 ## Özellikler
 - Entry bilgilerini getirir ve resime çevirir.
+- Görüntüyü `PNG` formatında indirebilme.
+- Görüntüyü kopyalama.
 
 ## Ekran Görüntüsü
 ![eksiShot](github_assets/ss1.png)
@@ -56,6 +58,8 @@ Hata raporları, özellik talepleri ve pull request'leri memnuniyetle karşılan
 - ReactJS
 - Axios
 - Cheerio
+- [DOM to Image more](https://github.com/1904labs/dom-to-image-more)
+- [Copy Image Clipboard](https://github.com/LuanEdCosta/copy-image-clipboard)
 
 ## Lisans
 eksiShot, MIT Lisansı şartları altında açık kaynak olarak kullanıma sunulmaktadır.
