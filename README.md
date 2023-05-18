@@ -50,6 +50,8 @@ Arama çubuğuna entry adresini girin ve `Enter` tuşuna basarak aratın. Ardın
 └── vite.config.js
 ```
 
+![markmap](/github_assets/markmap.png)
+
 ## Katkıda Bulunma
 
 Hata raporları, özellik talepleri ve pull request'leri memnuniyetle karşılanmaktadır. Bu proje, işbirliği için güvenli ve hoşgörülü bir ortam olmayı amaçlamaktadır ve katkıda bulunanların, Katılımcı Anlaşması'nın davranış kurallarına uyması beklenmektedir.
