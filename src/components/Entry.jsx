@@ -9,11 +9,11 @@ export default function Entry() {
   const entryNode = React.useRef();
   const [status, setStatus] = React.useState(false)
 
-  React.useEffect(()=>{
-    setTimeout(()=>{
+  React.useEffect(() => {
+    setTimeout(() => {
       setStatus(false)
     }, 2000)
-  },[status])
+  }, [status])
 
   if (loader) {
     return (
@@ -59,40 +59,40 @@ export default function Entry() {
                     <p className="text-xs italic text-gray-500 w-full text-right">{entry.date}</p>
                   </div>
                   <img className="h-7 sm:h-9 rounded-full self-center" src={entry.avatar} />
-                  {/* <img className="h-5 self-center" src="/img/damla.png" /> */ }
+                  {/* <img className="h-5 self-center" src="/img/damla.png" /> */}
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div className="max-w-2xl w-full mx-auto flex flex-row space-x-2">
-        <button
-          onClick={() =>
-            domtoimage
-              .toBlob(entryNode.current, { copyDefaultStyles: false, quality: 0.99 })
-              .then(function (blob) {
-                window.saveAs(blob, "eksiShot.png");
-              })
-          }
-          className="py-2 basis-2/3 bg-green-500 rounded-md text-black duration-300 hover:bg-green-400 font-[Inter]"
-        >Görüntüyü İndir
-        </button>
-        <button
-          disabled={status}
-          onClick={() =>{
+          <button
+            onClick={() =>
+              domtoimage
+                .toBlob(entryNode.current, { copyDefaultStyles: false, quality: 0.99 })
+                .then(function (blob) {
+                  window.saveAs(blob, "eksiShot.png");
+                })
+            }
+            className="py-2 basis-2/3 bg-green-500 rounded-md text-black duration-300 hover:bg-green-400 font-[Inter]"
+          >Görüntüyü İndir
+          </button>
+          <button
+            disabled={status}
+            onClick={() => {
               setStatus(true);
               domtoimage
-              .toBlob(entryNode.current, { copyDefaultStyles: false, quality: 0.99 })
-              .then(function (blob) {
-                return copyBlobToClipboard(blob);
-              })
-          }}
-          className="disabled:bg-gray-500 border disabled:text-slate-200 border-indigo-500 py-2 basis-1/3 bg-[#7DCE13] rounded-md text-black duration-300 enabled:hover:bg-[#5BB318] font-[Inter]"
-        >
-          {status ? "🎉 Kopyalandı" : "Kopyala"}
-        </button>
+                .toBlob(entryNode.current, { copyDefaultStyles: false, quality: 0.99 })
+                .then(function (blob) {
+                  return copyBlobToClipboard(blob);
+                })
+            }}
+            className="disabled:bg-gray-500 border disabled:text-slate-200 border-indigo-500 py-2 basis-1/3 bg-[#7DCE13] rounded-md text-black duration-300 enabled:hover:bg-[#5BB318] font-[Inter]"
+          >
+            {status ? "🎉 Kopyalandı" : "Kopyala"}
+          </button>
         </div>
-        
+
       </div>
     );
   }
@@ -117,7 +117,7 @@ export default function Entry() {
             <div>
               <p className="font-bold">VPN'siz Erişim</p>
               <p className="text-sm">
-                VPN kullanmanıza gerek yok. Hem eksisozluk.com hem de eksisozluk2023.com üzerinden entry görüntüsü oluşturabilirsiniz.
+                VPN kullanmanıza gerek yok. Herhangi bir eksisozluk.com adresi kullanılabilir.
               </p>
             </div>
           </div>
