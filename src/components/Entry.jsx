@@ -52,7 +52,7 @@ export default function Entry() {
                 dangerouslySetInnerHTML={{ __html: entry.body }}
               ></p>
               <div id="entry-footer" className="flex flex-row justify-stretch">
-                <p className="text-lime-600 text-xs sm:text-sm self-center">eksishot.vercel.app</p>
+                <p className="text-lime-600 text-xs sm:text-sm self-center">eksishot.emre.run</p>
                 <div id="entry-author" className="flex flex-row w-full justify-end gap-x-2 content-center">
                   <div className="flex flex-col w-full">
                     <p className="text-xs sm:text-sm w-full text-right">{entry.author}</p>

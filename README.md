@@ -12,7 +12,7 @@ A free tool that converts entries on [ekşi sözlük](https://www.eksisozluk.com
 
 ## Önizleme
 
-eksiShot, [eksishot.vercel.app](https://eksishot.vercel.app) adresi üzerinden kullanılabilir.
+eksiShot, [eksishot.emre.run](https://eksishot.emre.run) adresi üzerinden kullanılabilir.
 
 Arama çubuğuna entry adresini girin ve `Enter` tuşuna basarak aratın. Ardından entry görüntüsünü indirmek için `Görüntüyü İndir` butonuna tıklayın.
 
